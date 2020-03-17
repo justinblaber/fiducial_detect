@@ -1,0 +1,36 @@
+---
+serial: 19061245
+init:
+    - UserSetSelector:
+        value: PySpin.UserSetDefault_Default
+    - UserSetLoad:
+    - LineSelector:
+        value: PySpin.LineSelector_Line2
+    - V3_3Enable:
+        value: True
+    - AcquisitionFrameRateEnable:
+        value: True
+    - AcquisitionFrameRate:
+        value: 5
+    - ExposureMode:
+        value: PySpin.ExposureMode_Timed
+    - ExposureAuto:
+        value: PySpin.ExposureAuto_Off
+    - ExposureTime:
+        value: 60000
+    - GainSelector:
+        value: PySpin.GainSelector_All
+    - GainAuto:
+        value: PySpin.GainAuto_Off
+    - Gain:
+        value: 6
+    - BlackLevelSelector:
+        value: PySpin.BlackLevelSelector_All
+    - BlackLevel:
+        value: 0
+    - GammaEnable:
+        value: False
+    - PixelFormat:
+        value: PySpin.PixelFormat_Mono16
+    - AdcBitDepth:
+        value: PySpin.AdcBitDepth_Bit12
