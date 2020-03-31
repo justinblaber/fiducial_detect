@@ -15,5 +15,5 @@ On the left is a real validation image and on the right is a synthetic training 
 
 Some things I'm proud of in this project:
 
-* It uses completely synethetic data for training and actually WORKS for real data. I do acknowledge this is a rediculously simple geometry/problem (a flat calibration board), but the idea that a deep learning problem was "solved" with completely synthetic data is incredibly cool.
+* It uses completely synethetic data for training and actually WORKS for real data. I do acknowledge this is a ridiculously simple geometry/problem (a flat calibration board), but the idea that a deep learning problem was "solved" with completely synthetic data is incredibly cool.
 * It uses [nbdev](https://github.com/fastai/nbdev) which is an absolutely amazing library which makes developing in jupyter notebooks way more practical, enjoyable and FUN. 
