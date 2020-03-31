@@ -7,7 +7,7 @@ Detection problems in deep learning require ground truth data for training. But,
 
 All training data was synthetic and generated. The calibration board was modeled using the `Shapley` library in `gen_cb.ipynb`. Random homographies (which were constrained to be mostly in the FOV) were applied and the calibration board was painted on random images scraped from the Bing search engine as shown in `data.ipynb`. 
 
-The validation data consisted of real images of the calibration board. Detection of the fiducial markers were done automatically via some old automated algorithms I wrote in my [camera_calib](https://github.com/justinblaber/camera_calib) library. I do conceed that if these didn't exist, manual annotation would have been required.
+The validation data consisted of real images of the calibration board. Detection of the fiducial markers were done automatically via some old automated algorithms I wrote in my [camera_calib](https://github.com/justinblaber/camera_calib) library. I do conceed that if these didn't exist, manual annotation would have been required for the validation set.
 
 ![](val_vs_trn.png)
 
@@ -15,5 +15,5 @@ On the left is a real validation image and on the right is a synthetic training 
 
 Some things I'm proud of in this project:
 
-* It uses completely synethetic data for training and actually WORKS for real data. I do acknowledge this is a ridiculously simple geometry/problem (a flat calibration board), but the idea that a deep learning problem was "solved" with completely synthetic data is incredibly cool.
+* It uses completely synthetic data for training and actually WORKS for real data. I do acknowledge this is a ridiculously simple geometry/problem, but the idea that a real problem was solved with completely synthetic data and deep learning is incredibly cool.
 * It uses [nbdev](https://github.com/fastai/nbdev) which is an absolutely amazing library which makes developing in jupyter notebooks way more practical, enjoyable and FUN. 
