@@ -285,7 +285,7 @@ class RealMaskDataSet(Dataset):
         return len(self.files_img)
 
     def __getitem__(self, idx):
-        img = np.array(Image.open(self.files_img[idx]), dtype=np.float32)/2**16 # Images are uint16
+        img = np.array(Image.open(self.files_img[idx]), dtype=np.float32)
         mask = np.array(Image.open(self.files_mask[idx]), dtype=np.int32)
 
         if self.tfms is not None:
